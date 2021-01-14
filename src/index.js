@@ -1,6 +1,7 @@
 const Mocha = require('mocha')
 const mocha = new Mocha()
 const { assert } = require('chai');
+const { strictEqual } = assert
 mocha.suite.emit('pre-require', this, 'solution', mocha)
 const { describe, it } = Mocha
 
@@ -20,12 +21,12 @@ const doubler = (n) => n
 
 
 it('returns 0 when given 0', () => {
-  assert.strictEqual(doubler(0), 0)
+  strictEqual(doubler(0), 0)
 })
 
 // Can you fix the `doubler` function so that this tests passes?
 it('returns 10 when given 5', () => {
-  assert.strictEqual(doubler(5), 10)
+  strictEqual(doubler(5), 10)
 })
 
 
