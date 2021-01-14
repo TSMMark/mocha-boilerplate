@@ -1,0 +1,19 @@
+{
+  "name": "mocha-boilerplate",
+  "version": "1.0.0",
+  "description": "boilerplate for easily writing code snippets with unit tests",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/TSMMark/mocha-boilerplate"
+  },
+  "author": "Mark Allen",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
+  }
+}
